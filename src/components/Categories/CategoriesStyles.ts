@@ -1,12 +1,12 @@
 import { css, SerializedStyles } from '@emotion/react';
-import githubBB from '../../assets/github-background-black-.jpg';
-import githubB from '../../assets/github-background-.jpg';
-import designBB from '../../assets/design-background-black.jpg';
-import designB from '../../assets/design-background.jpg';
-import wordpressBB from '../../assets/wordpress-background-black.jpg';
-import wordpressB from '../../assets/wordpress-background.jpg';
-import videoBB from '../../assets/video-background-black.jpg';
-import videoB from '../../assets/video-background.jpg';
+import githubBB from '/assets/github-background-black-.jpg';
+import githubB from '/assets/github-background-.jpg';
+import designBB from '/assets/design-background-black.jpg';
+import designB from '/assets/design-background.jpg';
+import wordpressBB from '/assets/wordpress-background-black.jpg';
+import wordpressB from '/assets/wordpress-background.jpg';
+import videoBB from '/assets/video-background-black.jpg';
+import videoB from '/assets/video-background.jpg';
 
 export const getSectionStyles = (): SerializedStyles =>
   css({
