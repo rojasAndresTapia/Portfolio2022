@@ -10,6 +10,7 @@ module.exports = merge(common, {
   },
   output: {
     filename: 'js/[name].[chunkhash].js',
+    assetModuleFilename: 'images/[hash][ext][query]',
   },
   module: {
     rules: [
