@@ -14,6 +14,8 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import logo from '../../assets/logo.png';
+import profilePicture from '../../assets/profile-photo.png';
 
 import { getHeaderLogoStyles } from './NavBarStyles';
 
@@ -49,10 +51,7 @@ export const NavBar: React.FC = () => {
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
           <a href='/'>
-            <img
-              src='../../assets/logo-Andres-white.png'
-              css={getHeaderLogoStyles}
-            />
+            <img src={logo} css={getHeaderLogoStyles} />
           </a>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -113,10 +112,7 @@ export const NavBar: React.FC = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title='Open settings'>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar
-                  alt='Andrés Rojas Tapia'
-                  src='../../assets/profile-photo.png'
-                />
+                <Avatar alt='Andrés Rojas Tapia' src={profilePicture} />
               </IconButton>
             </Tooltip>
             <Menu
