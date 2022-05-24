@@ -1,6 +1,7 @@
 import { css, SerializedStyles } from '@emotion/react';
-import backgroundBB from '../../assets/header-background.png';
-import backgroundB from '../../assets/header-background-image.png';
+
+import backgroundBB from '/assets/header-background.png';
+import backgroundB from '/assets/header-background-image.png';
 
 export const getHeaderStyles = (): SerializedStyles =>
   css({

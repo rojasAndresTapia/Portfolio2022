@@ -27,14 +27,18 @@ export const DesignPage: React.FC = () => {
       <main css={getMainStyles}>
         <p>Here you can find some of my work</p>
         <section css={getWorksStyles}>
-          {designWorks.map((work, index) => (
-            <article key={index}>
-              <h3>{work.name}</h3>
-              <a href={work.url} target='_blank' rel='noopener noreferrer'>
-                <img src={work.image} />
-              </a>
-            </article>
-          ))}
+          {designWorks.map((work, index) => {
+            const img = new URL(work.image, import.meta.url);
+            console.log('#', img, '##', work.image, '###', import.meta.url);
+            return (
+              <article key={index}>
+                <h3>{work.name}</h3>
+                <a href={work.url} target='_blank' rel='noopener noreferrer'>
+                  <img src={work.image} />
+                </a>
+              </article>
+            );
+          })}
         </section>
       </main>
     </>

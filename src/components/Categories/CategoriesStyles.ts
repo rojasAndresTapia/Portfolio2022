@@ -1,12 +1,4 @@
 import { css, SerializedStyles } from '@emotion/react';
-import githubBB from '/assets/github-background-black-.jpg';
-import githubB from '/assets/github-background-.jpg';
-import designBB from '/assets/design-background-black.jpg';
-import designB from '/assets/design-background.jpg';
-import wordpressBB from '/assets/wordpress-background-black.jpg';
-import wordpressB from '/assets/wordpress-background.jpg';
-import videoBB from '/assets/video-background-black.jpg';
-import videoB from '/assets/video-background.jpg';
 
 export const getSectionStyles = (): SerializedStyles =>
   css({
@@ -27,30 +19,30 @@ export const getCategoriesStyles = (categoryName: string): SerializedStyles =>
     height: '35vh',
     textDecoration: 'none',
     ...(categoryName === 'Github' && {
-      backgroundImage: `url(${githubBB})`,
+      backgroundImage: 'url("../../assets/github-background-black-.jpg")',
       ':hover': {
-        backgroundImage: `url(${githubB})`,
+        backgroundImage: 'url("../../assets/github-background-.jpg")',
         transform: 'scale(1.05)',
       },
     }),
     ...(categoryName === 'Design' && {
-      backgroundImage: `url(${designBB})`,
+      backgroundImage: 'url("../../assets/design-background-black.jpg")',
       ':hover': {
-        backgroundImage: `url(${designB})`,
+        backgroundImage: 'url("../../assets/design-background.jpg")',
         transform: 'scale(1.05)',
       },
     }),
     ...(categoryName === 'Wordpress' && {
-      backgroundImage: `url(${wordpressBB})`,
+      backgroundImage: 'url("../../assets/wordpress-background-black.jpg")',
       ':hover': {
-        backgroundImage: `url(${wordpressB})`,
+        backgroundImage: 'url("../../assets/wordpress-background.jpg")',
         transform: 'scale(1.05)',
       },
     }),
     ...(categoryName === 'Video' && {
-      backgroundImage: `url(${videoBB})`,
+      backgroundImage: 'url("../../assets/video-background-black.jpg")',
       ':hover': {
-        backgroundImage: `url(${videoB})`,
+        backgroundImage: 'url("../../assets/video-background.jpg")',
         transform: 'scale(1.05)',
       },
     }),
