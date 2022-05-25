@@ -13,7 +13,8 @@
     "skipLibCheck": true,
     "esModuleInterop": true,
     "types": [
-      "@emotion/react/types/css-prop"
+      "@emotion/react/types/css-prop",
+      "node"
     ]
   },
   "include": [
