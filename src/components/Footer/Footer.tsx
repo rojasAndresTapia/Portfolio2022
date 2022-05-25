@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { getFooterSectionStyles } from './FooterStyles';
-import logo from '../../assets/logo-Andres.png';
+import logo from '../../assets/logo.png';
 
 export const Footer: React.FC = () => {
   return (

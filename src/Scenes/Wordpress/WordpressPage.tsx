@@ -1,11 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 import {
-  getHeaderStyles,
-  getMainStyles,
+  getWordpressHeaderStyles,
   getWorksStyles,
 } from './WordpressPageStyles';
 import { IWorksProps } from '../utils/interfaceWorks';
+import { getHeaderStyles, getMainStyles } from '../../styles/styles';
 
 export const WordpressPage: React.FC = () => {
   const [wordpressWorks, setWordpressWorks] = React.useState<IWorksProps[]>([]);
@@ -20,7 +20,7 @@ export const WordpressPage: React.FC = () => {
 
   return (
     <>
-      <header css={getHeaderStyles}>
+      <header css={[getHeaderStyles, getWordpressHeaderStyles]}>
         <h2>WORDPRESS</h2>
       </header>
       <main css={getMainStyles}>

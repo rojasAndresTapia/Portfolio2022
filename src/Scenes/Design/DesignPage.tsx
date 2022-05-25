@@ -3,11 +3,8 @@ import axios from 'axios';
 
 import { IWorksProps } from '../utils/interfaceWorks';
 
-import {
-  getHeaderStyles,
-  getMainStyles,
-  getWorksStyles,
-} from './DesignPageStyles';
+import { getDesignHeaderStyles, getWorksStyles } from './DesignPageStyles';
+import { getHeaderStyles, getMainStyles } from '../../styles/styles';
 
 export const DesignPage: React.FC = () => {
   const [designWorks, setDesignWorks] = React.useState<IWorksProps[]>([]);
@@ -21,7 +18,7 @@ export const DesignPage: React.FC = () => {
   }, []);
   return (
     <>
-      <header css={getHeaderStyles}>
+      <header css={[getHeaderStyles, getDesignHeaderStyles]}>
         <h2>DESIGN</h2>
       </header>
       <main css={getMainStyles}>

@@ -1,15 +1,16 @@
 import React from 'react';
+import { getGithubHeaderStyles } from './GithubPageStyles';
+import Button from '@mui/material/Button';
 import {
   getButtonStyles,
   getHeaderStyles,
   getMainStyles,
-} from './GithubPageStyles';
-import Button from '@mui/material/Button';
+} from '../../styles/styles';
 
 export const GithubPage: React.FC = () => {
   return (
     <>
-      <header css={getHeaderStyles}>
+      <header css={[getHeaderStyles, getGithubHeaderStyles]}>
         <h2>GITHUB</h2>
       </header>
       <main css={getMainStyles}>

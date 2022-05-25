@@ -17,7 +17,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import logo from '../../assets/logo.png';
 import profilePicture from '../../assets/profile-photo.png';
 
-import { getHeaderLogoStyles } from './NavBarStyles';
+import { getHeaderLogoStyles, getNavBarStyles } from './NavBarStyles';
 
 export const NavBar: React.FC = () => {
   const pages = ['Github', 'Design', 'Wordpress', 'Video', 'Contact'];
@@ -47,7 +47,7 @@ export const NavBar: React.FC = () => {
   };
 
   return (
-    <AppBar position='static'>
+    <AppBar position='sticky' css={getNavBarStyles}>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
           <a href='/'>
@@ -110,33 +110,7 @@ export const NavBar: React.FC = () => {
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title='Open settings'>
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt='Andrés Rojas Tapia' src={profilePicture} />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: '45px' }}
-              id='menu-appbar'
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign='center'>{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+            <Avatar alt='Andrés Rojas Tapia' src={profilePicture} />
           </Box>
         </Toolbar>
       </Container>

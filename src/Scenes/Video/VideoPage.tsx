@@ -2,11 +2,8 @@ import React from 'react';
 import axios from 'axios';
 
 import { IWorksProps } from '../utils/interfaceWorks';
-import {
-  getHeaderStyles,
-  getMainStyles,
-  getWorksStyles,
-} from './VideoPageStyles';
+import { getVideoHeaderStyles, getWorksStyles } from './VideoPageStyles';
+import { getHeaderStyles, getMainStyles } from '../../styles/styles';
 
 export const VideoPage: React.FC = () => {
   const [videoWorks, setVideoWorks] = React.useState<IWorksProps[]>([]);
@@ -20,7 +17,7 @@ export const VideoPage: React.FC = () => {
   }, []);
   return (
     <>
-      <header css={getHeaderStyles}>
+      <header css={[getHeaderStyles, getVideoHeaderStyles]}>
         <h2>VIDEO</h2>
       </header>
       <main css={getMainStyles}>

@@ -6,7 +6,7 @@ export const getFooterSectionStyles = (): SerializedStyles =>
     justifyContent: 'center',
     alignItems: 'center',
     height: '25vh',
-    backgroundColor: 'grey',
+    backgroundColor: 'rgba(0, 66, 78, 0.7)',
     img: {
       maxHeight: '15vh',
       maxWidth: '80%',
@@ -16,5 +16,7 @@ export const getFooterSectionStyles = (): SerializedStyles =>
       fontSize: '1.2em',
       fontFamily: 'Montserrat, sans-serif',
       margin: '0.5em',
+      color: '#ffffff',
+      letterSpacing: '1.5px',
     },
   });
