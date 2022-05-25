@@ -1,7 +1,7 @@
 [
   {
     "name": "Taktics",
-    "image": "taktics.jpg",
+    "image": "../../assets/taktics.jpg",
     "url": "https://taktics.net/",
     "category": "wordpress"
   },
