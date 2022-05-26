@@ -15,7 +15,7 @@ export const Categories: React.FC = () => {
   // const navigate = useNavigate();
 
   React.useEffect(() => {
-    axios.get('/api/Data/categories.json').then((res) => {
+    axios.get('Portfolio2022/api/Data/categories.json').then((res) => {
       setCategories(res.data);
     });
   }, []);
