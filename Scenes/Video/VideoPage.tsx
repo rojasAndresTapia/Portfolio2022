@@ -9,7 +9,7 @@ export const VideoPage: React.FC = () => {
   const [videoWorks, setVideoWorks] = React.useState<IWorksProps[]>([]);
 
   React.useEffect(() => {
-    axios.get('/api/Data/works.json').then((res) => {
+    axios.get('../api/Data/works.json').then((res) => {
       const filterData = res.data.filter((obj) => obj.category === 'video');
       setVideoWorks(filterData);
       console.log(filterData);
