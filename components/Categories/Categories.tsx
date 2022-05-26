@@ -15,17 +15,10 @@ export const Categories: React.FC = () => {
   // const navigate = useNavigate();
 
   React.useEffect(() => {
-    axios
-      .get('Portfolio2022Portfolio2022/api/Data/categories.json')
-      .then((res) => {
-        setCategories(res.data);
-      });
+    axios.get('../api/Data/categories.json').then((res) => {
+      setCategories(res.data);
+    });
   }, []);
-
-  // const handleOnclick = () => {
-  //   const path = '/Design';
-  //   navigate(path);
-  // };
 
   return (
     <section css={getSectionStyles}>
