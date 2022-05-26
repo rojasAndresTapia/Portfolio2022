@@ -28,9 +28,6 @@ module.exports = merge(common, {
             },
           },
           'sass-loader',
-          {
-            loader: 'resolve-url-loader',
-          },
         ],
       },
     ],
