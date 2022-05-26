@@ -45,7 +45,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new CopyPlugin({
-      patterns: [{ from: '../src', to: '../public' }],
+      patterns: [{ from: '../public', to: '' }],
     }),
   ],
   stats: {
