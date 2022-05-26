@@ -1,13 +1,10 @@
 import { css, SerializedStyles, keyframes } from '@emotion/react';
 
-import backgroundBB from '../../assets/header-background.png';
-import backgroundB from '../../../dist/images/d165dcbbd3bddf018cd5.png';
-
 export const getHeaderStyles = (): SerializedStyles =>
   css({
     fontFamily: 'Montserrat, sans-serif',
     height: '75vh',
-    backgroundImage: `url(${backgroundBB})`,
+    backgroundImage: `url(../../assets/header-background.png)`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     margin: 0,
@@ -16,7 +13,7 @@ export const getHeaderStyles = (): SerializedStyles =>
     justifyContent: 'center',
     alignItems: 'center',
     ':hover': {
-      backgroundImage: `url(${backgroundB})`,
+      backgroundImage: `url(../../assets/header-background-image.png)`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
     },
