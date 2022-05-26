@@ -2,7 +2,7 @@ import { css, SerializedStyles } from '@emotion/react';
 
 export const getVideoHeaderStyles = (): SerializedStyles =>
   css({
-    backgroundImage: 'url("../../assets/video-background-black.jpg")',
+    backgroundImage: 'url("/assets/video-background-black.jpg")',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
   });

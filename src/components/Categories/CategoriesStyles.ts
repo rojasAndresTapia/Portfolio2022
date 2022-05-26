@@ -25,30 +25,30 @@ export const getCategoriesStyles = (categoryName: string): SerializedStyles =>
     height: '35vh',
     textDecoration: 'none',
     ...(categoryName === 'Github' && {
-      backgroundImage: `url(../../assets/github-background-black-.jpg)`,
+      backgroundImage: `url(/assets/github-background-black-.jpg)`,
       ':hover': {
-        backgroundImage: `url(../../assets/github-background-.jpg)`,
+        backgroundImage: `url(/assets/github-background-.jpg)`,
         transform: 'scale(1.05)',
       },
     }),
     ...(categoryName === 'Design' && {
-      backgroundImage: `url(../../assets/design-background-black.jpg)`,
+      backgroundImage: `url(/assets/design-background-black.jpg)`,
       ':hover': {
-        backgroundImage: `url(../../assets/design-background.jpg)`,
+        backgroundImage: `url(/assets/design-background.jpg)`,
         transform: 'scale(1.05)',
       },
     }),
     ...(categoryName === 'Wordpress' && {
-      backgroundImage: `url(../../assets/wordpress-background-black.jpg)`,
+      backgroundImage: `url(/assets/wordpress-background-black.jpg)`,
       ':hover': {
-        backgroundImage: `url(../../assets/wordpress-background.jpg)`,
+        backgroundImage: `url(/assets/wordpress-background.jpg)`,
         transform: 'scale(1.05)',
       },
     }),
     ...(categoryName === 'Video' && {
-      backgroundImage: `url(../../assets/video-background-black.jpg)`,
+      backgroundImage: `url(/assets/video-background-black.jpg)`,
       ':hover': {
-        backgroundImage: `url../../assets/video-background.jpg)`,
+        backgroundImage: `url(/assets/video-background.jpg)`,
         transform: 'scale(1.05)',
       },
     }),
