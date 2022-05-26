@@ -45,7 +45,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new CopyPlugin({
-      patterns: [{ from: '../public', to: '../dist' }],
+      patterns: [{ from: '../public', to: '' }],
     }),
   ],
   stats: {
