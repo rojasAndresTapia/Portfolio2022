@@ -12,7 +12,7 @@ import { GithubPage } from '../../Scenes/Github/GihubPage';
 
 export const App: React.FC = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/Portfolio2022'>
       <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
