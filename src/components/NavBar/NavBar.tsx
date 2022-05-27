@@ -48,7 +48,7 @@ export const NavBar: React.FC = () => {
     <AppBar position='sticky' css={getNavBarStyles}>
       <Container maxWidth='xl'>
         <Toolbar disableGutters>
-          <a href='/'>
+          <a href='/Portfolio2022'>
             <img src={logo} css={getHeaderLogoStyles} />
           </a>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
