@@ -5,17 +5,19 @@ import { IWorksProps } from '../utils/interfaceWorks';
 
 import { getDesignHeaderStyles, getWorksStyles } from './DesignPageStyles';
 import { getHeaderStyles, getMainStyles } from '../../styles/styles';
-
+import { works } from '../../api/Data/works';
 import image from '../../assets/images.js';
 
 export const DesignPage: React.FC = () => {
-  const [designWorks, setDesignWorks] = React.useState<IWorksProps[]>([]);
   const filterData = (obj) => obj.category === 'design';
+  const [designWorks, setDesignWorks] = React.useState<IWorksProps[]>(
+    works.filter(filterData)
+  );
 
-  import(
-    /* webpackChunkName: "categories" */
-    '../../api/Data/works.json'
-  ).then((c) => setDesignWorks((c) => c.filter(filterData)));
+  // import(
+  //   /* webpackChunkName: "categories" */
+  //   '../../api/Data/works.json'
+  // ).then((c) => setDesignWorks((c) => c.filter(filterData)));
 
   // React.useEffect(() => {
   //   axios.get('/api/Data/works.json').then((res) => {

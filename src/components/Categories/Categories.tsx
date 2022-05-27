@@ -1,8 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { getCategoriesStyles, getSectionStyles } from './CategoriesStyles';
-import categories from '../../api/Data/categories.json';
-
+import { categories } from '../../api/Data/categories';
 // import { useNavigate } from 'react-router-dom';
 
 export const Categories: React.FC = () => {
@@ -13,18 +12,18 @@ export const Categories: React.FC = () => {
     backgroundImageHover: string;
   }
 
-  const [categories, setCategories] = React.useState<Categories[]>([]);
+  // const [categories, setCategories] = React.useState<Categories[]>([]);
   // const navigate = useNavigate();
 
-  import(
-    /* webpackChunkName: "categories" */
-    '../../api/Data/categories.json'
-  )
-    .then(({ default: r }) => {
-      console.log(r);
-      return r;
-    })
-    .then(setCategories);
+  // import(
+  //   /* webpackChunkName: "categories" */
+  //   '../../api/Data/categories.json'
+  // )
+  //   .then(({ default: r }) => {
+  //     console.log(r);
+  //     return r;
+  //   })
+  //   .then(setCategories);
   // React.useEffect(() => {
   //   axios.get('../../api/Data/categories.json').then((res) => {
   //     setCategories(res.data);
