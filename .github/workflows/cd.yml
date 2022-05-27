@@ -25,4 +25,4 @@ jobs:
       - name: Build
         run: npm run build:prod
       - name: Deploy
-        run: npm run deploy -- -r git@github.com:rojasAndresTapia/Portfolio2022/Portfolio2022.git
+        run: npm run deploy -- -r git@github.com:rojasAndresTapia/Portfolio2022.git

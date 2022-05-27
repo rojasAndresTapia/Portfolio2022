@@ -22,7 +22,7 @@ export const App: React.FC = () => {
         <Route path='/Video' element={<VideoPage />} />
         <Route path='/Contact' element={<ContactPage />} />
       </Routes>
-      <Categories />
+      {/* <Categories /> */}
       <Footer />
     </BrowserRouter>
   );
