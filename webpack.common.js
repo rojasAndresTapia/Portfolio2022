@@ -8,9 +8,9 @@ module.exports = {
   context: path.join(basePath, './src'),
   resolve: {
     extensions: ['.jsx', '.js', '.ts', '.tsx', '.css'],
-    // alias: {
-    //   config: path.resolve(__dirname, 'src/assets'),
-    // },
+    alias: {
+      config: path.resolve(__dirname, 'Portfolio2022/src'),
+    },
   },
   entry: {
     app: ['./index.tsx'],
