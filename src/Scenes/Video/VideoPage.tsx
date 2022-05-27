@@ -5,18 +5,22 @@ import { IWorksProps } from '../utils/interfaceWorks';
 import { getVideoHeaderStyles, getWorksStyles } from './VideoPageStyles';
 import { getHeaderStyles, getMainStyles } from '../../styles/styles';
 
+import { works } from '../../api/Data/works';
 import image from '../../assets/images.js';
 
 export const VideoPage: React.FC = () => {
-  const [videoWorks, setVideoWorks] = React.useState<IWorksProps[]>([]);
+  const filterData = (obj) => obj.category === 'video';
+  const [videoWorks, setVideoWorks] = React.useState<IWorksProps[]>(
+    works.filter(filterData)
+  );
 
-  React.useEffect(() => {
-    axios.get('../../api/Data/works.json').then((res) => {
-      const filterData = res.data.filter((obj) => obj.category === 'video');
-      setVideoWorks(filterData);
-      console.log(filterData);
-    });
-  }, []);
+  // React.useEffect(() => {
+  //   axios.get('../../api/Data/works.json').then((res) => {
+  //     const filterData = res.data.filter((obj) => obj.category === 'video');
+  //     setVideoWorks(filterData);
+  //     console.log(filterData);
+  //   });
+  // }, []);
   return (
     <>
       <header css={[getHeaderStyles, getVideoHeaderStyles]}>

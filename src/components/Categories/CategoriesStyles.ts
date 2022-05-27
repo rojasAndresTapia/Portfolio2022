@@ -1,6 +1,12 @@
 import { css, SerializedStyles } from '@emotion/react';
 import githubBackgroundBlack from '../../assets/github-background-black-.jpg';
 import githubBackground from '../../assets/github-background-.jpg';
+import designBackgroundBlack from '../../assets/design-background-black.jpg';
+import designBackground from '../../assets/design-background.jpg';
+import wordpressBackgroundBlack from '../../assets/wordpress-background-black.jpg';
+import wordpressBackground from '../../assets/wordpress-background.jpg';
+import videoBackgroundBlack from '../../assets/video-background-black.jpg';
+import videoBackground from '../../assets/video-background.jpg';
 
 export const getSectionStyles = (): SerializedStyles =>
   css({
@@ -34,23 +40,23 @@ export const getCategoriesStyles = (categoryName: string): SerializedStyles =>
       },
     }),
     ...(categoryName === 'Design' && {
-      backgroundImage: `url(/assets/design-background-black.jpg)`,
+      backgroundImage: `url(${designBackgroundBlack})`,
       ':hover': {
-        backgroundImage: `url(/assets/design-background.jpg)`,
+        backgroundImage: `url(${designBackground})`,
         transform: 'scale(1.05)',
       },
     }),
     ...(categoryName === 'Wordpress' && {
-      backgroundImage: `url(/assets/wordpress-background-black.jpg)`,
+      backgroundImage: `url(${wordpressBackgroundBlack})`,
       ':hover': {
-        backgroundImage: `url(/assets/wordpress-background.jpg)`,
+        backgroundImage: `url(${wordpressBackground})`,
         transform: 'scale(1.05)',
       },
     }),
     ...(categoryName === 'Video' && {
-      backgroundImage: `url(/assets/video-background-black.jpg)`,
+      backgroundImage: `url(${videoBackgroundBlack})`,
       ':hover': {
-        backgroundImage: `url(/assets/video-background.jpg)`,
+        backgroundImage: `url(${videoBackground})`,
         transform: 'scale(1.05)',
       },
     }),
