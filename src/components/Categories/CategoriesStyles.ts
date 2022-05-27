@@ -1,4 +1,6 @@
 import { css, SerializedStyles } from '@emotion/react';
+import githubBackgroundBlack from '../../assets/github-background-black-.jpg';
+import githubBackground from '../../assets/github-background-.jpg';
 
 export const getSectionStyles = (): SerializedStyles =>
   css({
@@ -25,9 +27,9 @@ export const getCategoriesStyles = (categoryName: string): SerializedStyles =>
     height: '35vh',
     textDecoration: 'none',
     ...(categoryName === 'Github' && {
-      backgroundImage: `url(/assets/github-background-black-.jpg)`,
+      backgroundImage: `url(${githubBackgroundBlack})`,
       ':hover': {
-        backgroundImage: `url(/assets/github-background-.jpg)`,
+        backgroundImage: `url(${githubBackground})`,
         transform: 'scale(1.05)',
       },
     }),

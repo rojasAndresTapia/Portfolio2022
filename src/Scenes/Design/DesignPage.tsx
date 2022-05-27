@@ -10,14 +10,20 @@ import image from '../../assets/images.js';
 
 export const DesignPage: React.FC = () => {
   const [designWorks, setDesignWorks] = React.useState<IWorksProps[]>([]);
+  const filterData = (obj) => obj.category === 'design';
 
-  React.useEffect(() => {
-    axios.get('/api/Data/works.json').then((res) => {
-      const filterData = res.data.filter((obj) => obj.category === 'design');
-      setDesignWorks(filterData);
-      console.log(filterData);
-    });
-  }, []);
+  import(
+    /* webpackChunkName: "categories" */
+    '../../api/Data/works.json'
+  ).then((c) => setDesignWorks((c) => c.filter(filterData)));
+
+  // React.useEffect(() => {
+  //   axios.get('/api/Data/works.json').then((res) => {
+
+  //     setDesignWorks(filterData);
+  //     console.log(filterData);
+  //   });
+  // }, []);
   return (
     <>
       <header css={[getHeaderStyles, getDesignHeaderStyles]}>
