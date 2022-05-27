@@ -9,7 +9,7 @@ module.exports = {
   resolve: {
     extensions: ['.jsx', '.js', '.ts', '.tsx', '.css'],
     alias: {
-      config: path.resolve(__dirname, 'Portfolio2022/src'),
+      config: path.resolve(__dirname, './src'),
     },
   },
   entry: {
