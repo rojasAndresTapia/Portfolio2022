@@ -15,7 +15,7 @@ export const App: React.FC = () => {
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path='/Home' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/Github' element={<GithubPage />} />
         <Route path='/Design' element={<DesignPage />} />
         <Route path='/Wordpress' element={<WordpressPage />} />
