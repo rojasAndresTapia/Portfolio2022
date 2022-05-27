@@ -1,6 +1,6 @@
 import { css, SerializedStyles, keyframes } from '@emotion/react';
 import headerBackground from '../../assets/header-background.png';
-import headerBackgroundImage from '../../assets/header-background-image.png';
+import headerBackgroundImage from '../../assets/Header-background-image.png';
 
 export const getHeaderStyles = (): SerializedStyles =>
   css({
