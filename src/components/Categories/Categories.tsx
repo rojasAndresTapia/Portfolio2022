@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { getCategoriesStyles, getSectionStyles } from './CategoriesStyles';
+
 // import { useNavigate } from 'react-router-dom';
 
 export const Categories: React.FC = () => {

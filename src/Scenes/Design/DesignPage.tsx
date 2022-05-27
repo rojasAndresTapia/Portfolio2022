@@ -6,6 +6,8 @@ import { IWorksProps } from '../utils/interfaceWorks';
 import { getDesignHeaderStyles, getWorksStyles } from './DesignPageStyles';
 import { getHeaderStyles, getMainStyles } from '../../styles/styles';
 
+import image from '../../assets/images.js';
+
 export const DesignPage: React.FC = () => {
   const [designWorks, setDesignWorks] = React.useState<IWorksProps[]>([]);
 
@@ -31,7 +33,7 @@ export const DesignPage: React.FC = () => {
               <article key={index}>
                 <h3>{work.name}</h3>
                 <a href={work.url} target='_blank' rel='noopener noreferrer'>
-                  <img src={work.image} />
+                  <img src={image[work.image]} />
                 </a>
               </article>
             );

@@ -5,6 +5,8 @@ import { IWorksProps } from '../utils/interfaceWorks';
 import { getVideoHeaderStyles, getWorksStyles } from './VideoPageStyles';
 import { getHeaderStyles, getMainStyles } from '../../styles/styles';
 
+import image from '../../assets/images.js';
+
 export const VideoPage: React.FC = () => {
   const [videoWorks, setVideoWorks] = React.useState<IWorksProps[]>([]);
 
@@ -29,7 +31,7 @@ export const VideoPage: React.FC = () => {
             <article key={index}>
               <h3>{work.name}</h3>
               <a href={work.url} target='_blank' rel='noopener noreferrer'>
-                <img src={work.image} />
+                <img src={image[work.image]} />
               </a>
             </article>
           ))}
