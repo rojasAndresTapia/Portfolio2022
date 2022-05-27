@@ -32,7 +32,6 @@ module.exports = merge(common, {
     compress: true,
     open: true,
     historyApiFallback: true,
-    contentBase: './',
     hot: true,
     // static: path.join(__dirname, 'src'),
   },

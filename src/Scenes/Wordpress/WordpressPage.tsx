@@ -16,14 +16,6 @@ export const WordpressPage: React.FC = () => {
     works.filter(filterData)
   );
 
-  // React.useEffect(() => {
-  //   axios.get('../../api/Data/works.json').then((res) => {
-  //     const filterData = res.data.filter((obj) => obj.category === 'wordpress');
-  //     setWordpressWorks(filterData);
-  //     console.log(res);
-  //   });
-  // }, []);
-
   return (
     <>
       <header css={[getHeaderStyles, getWordpressHeaderStyles]}>

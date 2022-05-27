@@ -21,6 +21,9 @@ export const getHeaderStyles = (): SerializedStyles =>
 
 export const getMainStyles = (): SerializedStyles =>
   css({
+    '@media(max-width: 800px)': {
+      maxWidth: '75%',
+    },
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -64,5 +67,8 @@ export const getButtonStyles = (): SerializedStyles =>
         color: '#ffffff',
         borderColor: '#ffffff',
       },
+    },
+    '@media(max-width: 800px)': {
+      justifyContent: 'center',
     },
   });

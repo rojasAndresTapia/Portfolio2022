@@ -10,19 +10,17 @@ import videoBackground from '../../assets/video-background.jpg';
 
 export const getSectionStyles = (): SerializedStyles =>
   css({
-    '@media(max-width: 800px)': {
-      flexDirection: 'column',
-    },
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
+    cursor: 'pointer',
+    '@media(max-width: 800px)': {
+      flexDirection: 'column',
+    },
   });
 
 export const getCategoriesStyles = (categoryName: string): SerializedStyles =>
   css({
-    '@media(max-width: 800px)': {
-      width: '100%',
-    },
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
     width: '25%',
@@ -32,6 +30,9 @@ export const getCategoriesStyles = (categoryName: string): SerializedStyles =>
     color: '#ffffff',
     height: '35vh',
     textDecoration: 'none',
+    '@media(max-width: 800px)': {
+      width: '100%',
+    },
     ...(categoryName === 'Github' && {
       backgroundImage: `url(${githubBackgroundBlack})`,
       ':hover': {

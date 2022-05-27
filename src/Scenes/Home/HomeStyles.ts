@@ -18,18 +18,11 @@ export const getHeaderStyles = (): SerializedStyles =>
       backgroundImage: `url(${headerBackgroundImage})`,
       backgroundRepeat: 'no-repeat',
       backgroundSize: 'cover',
+      '@media(max-width: 800px)': {
+        backgroundPosition: '60%',
+      },
     },
     transition: '0.8s',
-
-    h2: {
-      fontSize: '2em',
-      color: '#ffffff',
-      letterSpacing: '2px',
-      fontWeight: 500,
-      marginTop: 0,
-      // transform: 'scale(0.93)',
-      // animation: 'scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1)',
-    },
   });
 
 const scale = keyframes({
@@ -45,6 +38,9 @@ const fadeIn = keyframes({
 
 export const getNameStyles = (): SerializedStyles =>
   css({
+    '@media(max-width: 800px)': {
+      textAlign: 'center',
+    },
     fontSize: '3em',
     color: '#ffffff',
     fontWeight: 700,
@@ -64,11 +60,14 @@ export const getNameStyles = (): SerializedStyles =>
 
 export const getSubTitleStyles = (): SerializedStyles =>
   css({
-    fontSize: '3em',
+    '@media(max-width: 800px)': {
+      textAlign: 'center',
+    },
+    fontSize: '2em',
     color: '#ffffff',
-    fontWeight: 700,
-    letterSpacing: '4px',
-    marginBottom: 0,
+    letterSpacing: '2px',
+    fontWeight: 500,
+    marginTop: 0,
     display: 'inline - block',
     animation: `${scale} 3s forwards cubic-bezier(0.5, 1, 0.89, 1)`,
     'span:nth-child(1)': {

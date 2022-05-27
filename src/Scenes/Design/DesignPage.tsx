@@ -14,18 +14,6 @@ export const DesignPage: React.FC = () => {
     works.filter(filterData)
   );
 
-  // import(
-  //   /* webpackChunkName: "categories" */
-  //   '../../api/Data/works.json'
-  // ).then((c) => setDesignWorks((c) => c.filter(filterData)));
-
-  // React.useEffect(() => {
-  //   axios.get('/api/Data/works.json').then((res) => {
-
-  //     setDesignWorks(filterData);
-  //     console.log(filterData);
-  //   });
-  // }, []);
   return (
     <>
       <header css={[getHeaderStyles, getDesignHeaderStyles]}>

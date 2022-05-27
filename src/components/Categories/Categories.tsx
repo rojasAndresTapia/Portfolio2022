@@ -3,7 +3,6 @@ import axios from 'axios';
 import { getCategoriesStyles, getSectionStyles } from './CategoriesStyles';
 import { categories } from '../../api/Data/categories';
 import { useNavigate } from 'react-router-dom';
-// import { useNavigate } from 'react-router-dom';
 
 interface Categories {
   name: string;
@@ -14,29 +13,6 @@ interface Categories {
 
 export const Categories: React.FC = () => {
   const navigate = useNavigate();
-
-  // const [categories, setCategories] = React.useState<Categories[]>([]);
-  // const navigate = useNavigate();
-
-  // import(
-  //   /* webpackChunkName: "categories" */
-  //   '../../api/Data/categories.json'
-  // )
-  //   .then(({ default: r }) => {
-  //     console.log(r);
-  //     return r;
-  //   })
-  //   .then(setCategories);
-  // React.useEffect(() => {
-  //   axios.get('../../api/Data/categories.json').then((res) => {
-  //     setCategories(res.data);
-  //   });
-  // }, []);
-
-  // const handleOnclick = () => {
-  //   const path = '/Design';
-  //   navigate(path);
-  // };
 
   return (
     <section css={getSectionStyles}>

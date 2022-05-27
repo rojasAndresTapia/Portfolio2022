@@ -26,11 +26,11 @@ export const Home: React.FC = () => {
         <p>
           I am a Front End Developer / Graphic Designer from Chile. I studied
           Hotel Management in Santiago, and after my first work experience in
-          the experience in the HR area, I decided to travel and open my mind to
-          new opportunities. Since 2010, I have been living in Spain. I have
-          worked in different projects designing webs, corporate image, digital
-          image and video. In my current job, i am responsible for the area of
-          design and support of a company that has developed a software for
+          the HR area, i decided to travel and open my mind to new
+          opportunities. Since 2009, I have been living in Spain. I have worked
+          in different projects designing webs, corporate image, digital image
+          and video. In my current job, i am responsible for the area of design
+          and support of a company that has developed a software for
           construction and installation companies, facilitating their digital
           transformation process. Currently, I am expanding my competences in
           the area of web development through Lemoncode's Front End Master.
