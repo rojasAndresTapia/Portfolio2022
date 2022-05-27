@@ -1,8 +1,9 @@
 import { css, SerializedStyles } from '@emotion/react';
+import headerBackground from '../../assets/wordpress-background-black.jpg';
 
 export const getWordpressHeaderStyles = (): SerializedStyles =>
   css({
-    backgroundImage: 'url("/assets/wordpress-background-black.jpg")',
+    backgroundImage: `url(${headerBackground})`,
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
   });

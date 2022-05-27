@@ -1,39 +1,40 @@
-const { merge } = require("webpack-merge");
-const common = require("./webpack.common.js");
-const path = require("path");
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common.js');
+const path = require('path');
 
 module.exports = merge(common, {
-  mode: "development",
+  mode: 'development',
   module: {
     rules: [
       {
         test: /\.scss$/,
         exclude: /node_modules/,
         use: [
-          "style-loader",
+          'style-loader',
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               modules: {
-                exportLocalsConvention: "camelCase",
-                localIdentName: "[path][name]__[local]--[hash:base64:5]",
-                localIdentContext: path.resolve(__dirname, "src"),
+                exportLocalsConvention: 'camelCase',
+                localIdentName: '[path][name]__[local]--[hash:base64:5]',
+                localIdentContext: path.resolve(__dirname, 'src'),
               },
             },
           },
-          "sass-loader",
+          'sass-loader',
         ],
       },
     ],
   },
-  devtool: "eval-source-map",
+  devtool: 'eval-source-map',
   devServer: {
     port: 8080,
     compress: true,
     open: true,
     historyApiFallback: true,
+    contentBase: './',
     hot: true,
     // static: path.join(__dirname, 'src'),
   },
-  stats: "errors-only",
+  stats: 'errors-only',
 });
