@@ -3,7 +3,6 @@
     "@emotion/babel-preset-css-prop",
     "@babel/preset-env",
     "@babel/preset-typescript",
-    "@babel/plugin-syntax-dynamic-import",
     [
       "@babel/preset-react",
       {
