@@ -1,6 +1,6 @@
 import ChilewinesCatalog from '../assets/Chilewines-catalogo.jpg';
 import ChilewinesCards from '../assets/Chilewines-tarjetas.jpg';
-import PrimaryBook from '../assets/libro-educación-1.jpg';
+import PrimaryBook from '../assets/Libro-educación-1.jpg';
 import Intervention from '../assets/modelo-de-intervencion.jpg';
 import Emilio from '../assets/Menu-emilio.jpg';
 import FlyerLabs from '../assets/flyer-labs.jpg';
@@ -14,7 +14,7 @@ import Eureka from '../assets/eureka.jpg';
 import Dinatec from '../assets/dinatec.jpg';
 import Adleragro from '../assets/adleragro.jpg';
 import Handisport from '../assets/handisport.jpg';
-import Labs4opss from '../assets/labs4opps-web.jpg';
+import Labs4opss from '../assets/Labs4opps-web.jpg';
 import jardinero from '../assets/jardinerofiel.jpg';
 import EdcampVideo from '../assets/edcamp.jpg';
 import InstaladoresVideo from '../assets/instaladores-de-exito.jpg';
