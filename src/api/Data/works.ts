@@ -48,6 +48,12 @@ export const works = [
     category: 'wordpress',
   },
   {
+    name: 'Eureka app',
+    image: 'EurekaApp',
+    url: 'https://xd.adobe.com/view/2bf5d280-42d2-4f16-bfe8-50945b7b6544-7ea6/?fullscreen',
+    category: 'design',
+  },
+  {
     name: 'Chilewines Catalog',
     image: 'Chilewines_catalog',
     url: '',

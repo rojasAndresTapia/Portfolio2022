@@ -19,6 +19,7 @@ import jardinero from './jardinerofiel.jpg';
 import EdcampVideo from './edcamp.jpg';
 import InstaladoresVideo from './instaladores-de-exito.jpg';
 import ImoticsVideo from './emotions-imotics.jpg';
+import EurekaApp from './Eureka-app.jpg';
 
 const image = {
   Chilewines_cards: ChilewinesCards,
@@ -42,6 +43,7 @@ const image = {
   EdcampVideo: EdcampVideo,
   InstaladoresVideo: InstaladoresVideo,
   ImoticsVideo: ImoticsVideo,
+  EurekaApp: EurekaApp,
 };
 
 export default image;

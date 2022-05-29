@@ -24,16 +24,22 @@ export const Home: React.FC = () => {
       <main css={getMainStyles}>
         <h2>ABOUT ME</h2>
         <p>
-          I am a Front End Developer / Graphic Designer from Chile. I studied
-          Hotel Management in Santiago, and after my first work experience in
-          the HR area, i decided to travel and open my mind to new
-          opportunities. Since 2009, I have been living in Spain. I have worked
-          in different projects designing webs, corporate image, digital image
-          and video. In my current job, i am responsible for the area of design
-          and support of a company that has developed a software for
+          I am a Front End Developer coming from the Graphic Design area. I'm
+          from Chile and since 2009 I live in Spain. I have worked in different
+          projects of web design, corporate image, digital image and video. In
+          the last project I was involved, I was responsible for the design and
+          support area in a startup that has developed a software for
           construction and installation companies, facilitating their digital
-          transformation process. Currently, I am expanding my competences in
-          the area of web development through Lemoncode's Front End Master.
+          transformation process.
+        </p>
+        <p>
+          Currently, I am expanding my skills in the area of web development
+          through the Lemoncode Front End Master that I am about to finish. Also
+          with personal projects like this portfolio, configured with
+          <strong> Webpack</strong>, developed with <strong>React</strong>,
+          typed with
+          <strong> Typescript</strong>, styled with <strong>Emotion</strong> and
+          published with <strong>Github Action</strong>.
         </p>
       </main>
       <div css={getButtonStyles}>
