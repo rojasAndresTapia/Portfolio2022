@@ -20,7 +20,9 @@ Commons:
 
 Once the structure is thought out I have created a design file in Figma to visualize the web in more detail, components, calls, functionalities, and pages.
 
-![alt text](https://github.com/rojasAndresTapia/Portfolio2022/blob/master/figma-link.jpg?raw=true)
+![figma-link](https://user-images.githubusercontent.com/61330345/171021832-8082bc3d-bda9-4b01-a2e6-ad41d89ee4c3.jpg)
+
+Here's a link to the design: 
 
 The next step is to create the project configuration in Vs Code:
 - Assembled with Webpack
