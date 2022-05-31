@@ -31,6 +31,9 @@ The next step is to create the project configuration in Vs Code:
 - Styled with Emotion
 - Published to Github Pages with Github Action
 
+![Captura de pantalla 2022-05-31 a las 10 34 44](https://user-images.githubusercontent.com/61330345/171130293-1f47a0ab-0d0b-4596-af9e-8ca43922b899.png)
+
+
 The main problem arose when publishing the project with Github Action, since most of the images were not rendered, coming from a .json file that did not import the images dynamically. So I proceeded to change the .json file for a .js file, and import all the images into an exportable object.
 
 
