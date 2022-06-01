@@ -3,6 +3,7 @@ import React from 'react';
 import emailjs from '@emailjs/browser';
 
 import { getFormStyles, getSubmitButtonStyles } from './ContactPageStyles';
+import { getMainStyles } from '../../styles/styles';
 
 export const ContactPage: React.FC = () => {
   const sendMail = (e) => {
@@ -23,8 +24,8 @@ export const ContactPage: React.FC = () => {
       .catch((err) => console.error(err));
   };
   return (
-    <main css={getFormStyles}>
-      <h1>Send me a message</h1>
+    <main css={[getFormStyles, getMainStyles]}>
+      <h2>Send me a message</h2>
 
       <CardContent>
         <form onSubmit={sendMail}>

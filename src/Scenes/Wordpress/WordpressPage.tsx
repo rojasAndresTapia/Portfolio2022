@@ -1,11 +1,14 @@
 import React from 'react';
-import axios from 'axios';
 import {
   getWordpressHeaderStyles,
   getWorksStyles,
 } from './WordpressPageStyles';
 import { IWorksProps } from '../utils/interfaceWorks';
-import { getHeaderStyles, getMainStyles } from '../../styles/styles';
+import {
+  getHeaderStyles,
+  getMainStyles,
+  getNameStyles,
+} from '../../styles/styles';
 import { works } from '../../api/Data/works';
 
 import image from '../../assets/images.js';
@@ -29,7 +32,7 @@ export const WordpressPage: React.FC = () => {
         <section css={getWorksStyles}>
           {wordpressWorks.map((work, index) => (
             <article key={index}>
-              <h3>{work.name}</h3>
+              <h3 css={getNameStyles}>{work.name}</h3>
               <a href={work.url} target='_blank' rel='noopener noreferrer'>
                 <img src={image[work.image]} />
               </a>

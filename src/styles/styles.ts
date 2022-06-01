@@ -46,7 +46,17 @@ export const getMainStyles = (): SerializedStyles =>
       letterSpacing: '2px',
       fontWeight: 700,
       marginTop: 0,
+      paddingTop: '5vh',
+      paddingBottom: '5vh',
     },
+  });
+
+export const getNameStyles = (): SerializedStyles =>
+  css({
+    marginBottom: '5vh',
+    marginTop: '5vh',
+    fontWeight: 700,
+    fontSize: '1.2rem',
   });
 
 export const getButtonStyles = (): SerializedStyles =>
