@@ -29,6 +29,7 @@ export const getPersonalDataSectionStyles = (): SerializedStyles =>
     margin: '0.5em',
     color: '#ffffff',
     letterSpacing: '1.5px',
+    lineHeight: '1.5',
     '@media(max-width: 800px)': {
       maxWidth: '75%',
       textAlign: 'center',

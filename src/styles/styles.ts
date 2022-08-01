@@ -34,12 +34,12 @@ export const getMainStyles = (): SerializedStyles =>
     paddingBottom: '7vh',
     fontFamily: 'Montserrat, sans-serif',
     p: {
-      fontSize: '1em',
+      fontSize: '1.1em',
       color: '#45434C',
       fontWeight: 500,
       letterSpacing: '2px',
       marginBottom: 0,
-      lineHeight: '1.5em',
+      lineHeight: '1.7em',
     },
     h2: {
       fontSize: '2em',

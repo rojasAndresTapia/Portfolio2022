@@ -33,9 +33,10 @@ export const Home: React.FC = () => {
           transformation process.
         </p>
         <p>
-          Currently, I am expanding my skills in the area of web development
-          through the Lemoncode Front End Master that I am about to finish. Also
-          with personal projects like this portfolio, configured with
+          In addition, I have expanded my skills in the area of web development
+          through the Lemoncode Front End Master that I have successfully
+          completed this June 2022. Also with personal projects like this
+          portfolio, configured with
           <strong> Webpack</strong>, developed with <strong>React</strong>,
           typed with
           <strong> Typescript</strong>, styled with <strong>Emotion</strong> and

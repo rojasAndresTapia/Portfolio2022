@@ -12,6 +12,7 @@ import { GithubPage } from '../../Scenes/Github/GihubPage';
 
 export const App: React.FC = () => {
   return (
+    // change basename ('/') route before push to... '/Portfolio2022'
     <BrowserRouter basename='/Portfolio2022'>
       <NavBar />
       <Routes>
