@@ -1,5 +1,4 @@
 import React from 'react';
-import axios from 'axios';
 
 import { IWorksProps } from '../utils/interfaceWorks';
 
@@ -28,7 +27,7 @@ export const DesignPage: React.FC = () => {
         <section css={getWorksStyles}>
           {designWorks.map((work, index) => {
             const img = new URL(work.image, import.meta.url);
-            console.log('#', img, '##', work.image, '###', import.meta.url);
+            // console.log('#', img, '##', work.image, '###', import.meta.url);
             return (
               <article key={index}>
                 <h3 css={getNameStyles}>{work.name}</h3>
