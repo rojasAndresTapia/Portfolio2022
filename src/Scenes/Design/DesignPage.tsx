@@ -26,7 +26,7 @@ export const DesignPage: React.FC = () => {
         <p>Here you can find some of my work</p>
         <section css={getWorksStyles}>
           {designWorks.map((work, index) => {
-            const img = new URL(work.image, import.meta.url);
+            // const img = new URL(work.image, import.meta.url);
             // console.log('#', img, '##', work.image, '###', import.meta.url);
             return (
               <article key={index}>
