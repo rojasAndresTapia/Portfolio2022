@@ -20,6 +20,7 @@ import EdcampVideo from './edcamp.jpg';
 import InstaladoresVideo from './instaladores-de-exito.jpg';
 import ImoticsVideo from './emotions-imotics.jpg';
 import EurekaApp from './Eureka-app.jpg';
+import Favicon1 from './Favicon1.png';
 
 const image = {
   Chilewines_cards: ChilewinesCards,
@@ -44,6 +45,7 @@ const image = {
   InstaladoresVideo: InstaladoresVideo,
   ImoticsVideo: ImoticsVideo,
   EurekaApp: EurekaApp,
+  Favicon1: Favicon1,
 };
 
 export default image;
