@@ -131,4 +131,10 @@ export const works = [
     url: 'https://youtu.be/MRzUj5o2oM0',
     category: 'video',
   },
+  {
+    name: 'Cupon Code Generator',
+    image: 'Cupon',
+    url: 'https://github.com/rojasAndresTapia/Cupon-code-generator',
+    category: 'github',
+  },
 ];
