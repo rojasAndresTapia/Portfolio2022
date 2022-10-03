@@ -137,4 +137,10 @@ export const works = [
     url: 'https://github.com/rojasAndresTapia/Cupon-code-generator',
     category: 'github',
   },
+  {
+    name: 'Online bank account',
+    image: 'Banca',
+    url: 'https://github.com/rojasAndresTapia/Banca-online',
+    category: 'github',
+  },
 ];

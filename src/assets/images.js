@@ -21,7 +21,8 @@ import InstaladoresVideo from './instaladores-de-exito.jpg';
 import ImoticsVideo from './emotions-imotics.jpg';
 import EurekaApp from './Eureka-app.jpg';
 import Favicon1 from './Favicon1.png';
-import Cupon from './cupon-code.png'
+import Cupon from './cupon-code.png';
+import Banca from './bank-account.png';
 
 const image = {
   Chilewines_cards: ChilewinesCards,
@@ -47,7 +48,8 @@ const image = {
   ImoticsVideo: ImoticsVideo,
   EurekaApp: EurekaApp,
   Favicon1: Favicon1,
-  Cupon: Cupon
+  Cupon: Cupon, 
+  Banca: Banca
 };
 
 export default image;
