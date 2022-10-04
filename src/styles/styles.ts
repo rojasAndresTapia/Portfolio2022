@@ -34,7 +34,7 @@ export const getMainStyles = (): SerializedStyles =>
     paddingBottom: '7vh',
     fontFamily: 'Montserrat, sans-serif',
     p: {
-      fontSize: '1.1em',
+      fontSize: '1.1rem',
       color: '#45434C',
       fontWeight: 500,
       letterSpacing: '2px',
@@ -42,7 +42,7 @@ export const getMainStyles = (): SerializedStyles =>
       lineHeight: '1.7em',
     },
     h2: {
-      fontSize: '2em',
+      fontSize: '2rem',
       letterSpacing: '2px',
       fontWeight: 700,
       marginTop: 0,
@@ -80,5 +80,29 @@ export const getButtonStyles = (): SerializedStyles =>
     },
     '@media(max-width: 800px)': {
       justifyContent: 'center',
+    },
+  });
+
+  export const getWorksStyles = (): SerializedStyles =>
+  css({
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-around',
+    article: {
+      width: '40%',
+      padding: '1em',
+      transition: '0.5s',
+      ':hover': {
+        transform: 'scale(1.03)',
+      }
+    },
+    img: {
+      width: '100%',
+      transition: '0.5s',
+      boxShadow: 'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px',
+      ':hover': {
+        boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
+      }
     },
   });

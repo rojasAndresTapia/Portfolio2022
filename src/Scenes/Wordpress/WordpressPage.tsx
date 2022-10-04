@@ -1,13 +1,13 @@
 import React from 'react';
 import {
-  getWordpressHeaderStyles,
-  getWorksStyles,
+  getWordpressHeaderStyles
 } from './WordpressPageStyles';
 import { IWorksProps } from '../utils/interfaceWorks';
 import {
   getHeaderStyles,
   getMainStyles,
   getNameStyles,
+  getWorksStyles,
 } from '../../styles/styles';
 import { works } from '../../api/Data/works';
 

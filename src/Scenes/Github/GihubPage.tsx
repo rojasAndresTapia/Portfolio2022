@@ -2,13 +2,14 @@ import React from 'react';
 
 import { IWorksProps } from '../utils/interfaceWorks';
 
-import { getGithubHeaderStyles, getProjectsStyles } from './GithubPageStyles';
+import { getGithubHeaderStyles } from './GithubPageStyles';
 import Button from '@mui/material/Button';
 import {
   getButtonStyles,
   getHeaderStyles,
   getMainStyles,
-  getNameStyles
+  getNameStyles,
+  getWorksStyles
 } from '../../styles/styles';
 import { works } from '../../api/Data/works';
 import image from '../../assets/images.js';
@@ -40,7 +41,7 @@ export const GithubPage: React.FC = () => {
           Github
         </Button>
       </div>
-      <section css={getProjectsStyles}>
+      <section css={getWorksStyles}>
           {githubWorks.map((work, index) => {
             // const img = new URL(work.image, import.meta.url);
             // console.log('#', img, '##', work.image, '###', import.meta.url);

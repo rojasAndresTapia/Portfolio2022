@@ -23,6 +23,16 @@ import EurekaApp from './Eureka-app.jpg';
 import Favicon1 from './Favicon1.png';
 import Cupon from './cupon-code.png';
 import Banca from './bank-account.png';
+import Todo from './To-do.png';
+import Booking from './booking.png';
+import Inmobiliaria from './portal-inmobiliario.png';
+import Movies from './movies.png';
+import Portfolio from './Portfolio.jpg';
+import Enigma from './enigma.png';
+import Calculator from './calculator.png';
+import Money from './money.png';
+import Breaking from './breaking-bad.png'
+import Compra from './lista-compra.png'
 
 const image = {
   Chilewines_cards: ChilewinesCards,
@@ -49,7 +59,17 @@ const image = {
   EurekaApp: EurekaApp,
   Favicon1: Favicon1,
   Cupon: Cupon, 
-  Banca: Banca
+  Banca: Banca,
+  Todo: Todo,
+  Booking: Booking,
+  Inmobiliaria: Inmobiliaria,
+  Movies: Movies,
+  Portfolio: Portfolio,
+  Enigma: Enigma,
+  Calculator: Calculator,
+  Money: Money,
+  Breaking: Breaking,
+  Compra: Compra
 };
 
 export default image;

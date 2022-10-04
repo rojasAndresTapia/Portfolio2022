@@ -132,15 +132,76 @@ export const works = [
     category: 'video',
   },
   {
+    name: 'Online bank account',
+    image: 'Banca',
+    url: 'https://github.com/rojasAndresTapia/Banca-online',
+    category: 'github',
+  },
+  {
+    name: 'Real estate portal',
+    image: 'Inmobiliaria',
+    url: 'https://github.com/rojasAndresTapia/Lemoncode-Inmobiliaria',
+    category: 'github',
+  },
+  {
+    name: 'Movies page',
+    image: 'Movies',
+    url: 'https://github.com/rojasAndresTapia/Lemoncode-Master-module-1-challenge',
+    category: 'github',
+  },
+  {
+    name: 'Portfolio web page',
+    image: 'Portfolio',
+    url: 'https://github.com/rojasAndresTapia/Portfolio2022',
+    category: 'github',
+  },
+  {
+    name: 'To-do App',
+    image: 'Todo',
+    url: 'https://github.com/rojasAndresTapia/To-do-app',
+    category: 'github',
+  },
+  {
     name: 'Cupon Code Generator',
     image: 'Cupon',
     url: 'https://github.com/rojasAndresTapia/Cupon-code-generator',
     category: 'github',
   },
   {
-    name: 'Online bank account',
-    image: 'Banca',
-    url: 'https://github.com/rojasAndresTapia/Banca-online',
+    name: 'Booking price calculator',
+    image: 'Booking',
+    url: 'https://github.com/rojasAndresTapia/Lemoncode-module-four-Booking',
     category: 'github',
   },
+  {
+    name: 'Breaking Bad Characters Api',
+    image: 'Breaking',
+    url: 'https://github.com/rojasAndresTapia/lemoncode-module-10-Breaking-Bad',
+    category: 'github',
+  },
+  {
+    name: 'Message Encryptor',
+    image: 'Enigma',
+    url: 'https://github.com/rojasAndresTapia/Lemoncode-module-6.2-enigma',
+    category: 'github',
+  },
+  {
+    name: 'Simple calculator',
+    image: 'Calculator',
+    url: 'https://github.com/rojasAndresTapia/Lemoncode-module-four',
+    category: 'github',
+  },
+  {
+    name: 'Payment change calculator',
+    image: 'Money',
+    url: 'https://github.com/rojasAndresTapia/Lemoncode-module-6.3-change-money',
+    category: 'github',
+  },
+  {
+    name: 'Shopping list',
+    image: 'Compra',
+    url: 'https://github.com/rojasAndresTapia/Lemoncode-module-6.1-cart',
+    category: 'github',
+  }
+
 ];

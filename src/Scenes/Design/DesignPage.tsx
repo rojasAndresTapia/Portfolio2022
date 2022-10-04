@@ -2,11 +2,12 @@ import React from 'react';
 
 import { IWorksProps } from '../utils/interfaceWorks';
 
-import { getDesignHeaderStyles, getWorksStyles } from './DesignPageStyles';
+import { getDesignHeaderStyles } from './DesignPageStyles';
 import {
   getHeaderStyles,
   getMainStyles,
   getNameStyles,
+  getWorksStyles,
 } from '../../styles/styles';
 import { works } from '../../api/Data/works';
 import image from '../../assets/images.js';
