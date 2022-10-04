@@ -9,7 +9,7 @@ import {
   getHeaderStyles,
   getMainStyles,
   getNameStyles,
-  getWorksStyles
+  getWorksStyles,
 } from '../../styles/styles';
 import { works } from '../../api/Data/works';
 import image from '../../assets/images.js';
@@ -26,9 +26,9 @@ export const GithubPage: React.FC = () => {
       </header>
       <main css={getMainStyles}>
         <p>
-          Below is the button that will direct you to my Github repository,
-          where little by little I am uploading exercises from my Bootcamp, as
-          well as small projects that I am creating.
+          Below is the button that will direct you to my Github account, where I
+          am gradually uploading exercises, as well as small projects that I am
+          creating. Also below you will find some of my projects.
         </p>
       </main>
       <div css={getButtonStyles}>
@@ -36,25 +36,25 @@ export const GithubPage: React.FC = () => {
           onClick={() =>
             window.open('https://github.com/rojasAndresTapia', '_blank')
           }
-          variant='outlined'
+          variant="outlined"
         >
           Github
         </Button>
       </div>
       <section css={getWorksStyles}>
-          {githubWorks.map((work, index) => {
-            // const img = new URL(work.image, import.meta.url);
-            // console.log('#', img, '##', work.image, '###', import.meta.url);
-            return (
-              <article key={index}>
-                <h3 css={getNameStyles}>{work.name}</h3>
-                <a href={work.url} target='_blank' rel='noopener noreferrer'>
-                  <img src={image[work.image]} />
-                </a>
-              </article>
-            );
-          })}
-        </section>
+        {githubWorks.map((work, index) => {
+          // const img = new URL(work.image, import.meta.url);
+          // console.log('#', img, '##', work.image, '###', import.meta.url);
+          return (
+            <article key={index}>
+              <h3 css={getNameStyles}>{work.name}</h3>
+              <a href={work.url} target="_blank" rel="noopener noreferrer">
+                <img src={image[work.image]} />
+              </a>
+            </article>
+          );
+        })}
+      </section>
     </>
   );
 };
