@@ -27,7 +27,7 @@ import Todo from './To-do.png';
 import Booking from './booking.png';
 import Inmobiliaria from './portal-inmobiliario.png';
 import Movies from './movies.png';
-import Portfolio from './Portfolio.jpg';
+import Portfolio from './Portfolio.png';
 import Enigma from './enigma.png';
 import Calculator from './calculator.png';
 import Money from './money.png';
