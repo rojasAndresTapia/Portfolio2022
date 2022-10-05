@@ -168,6 +168,12 @@ export const works = [
     category: 'github',
   },
   {
+    name: 'Company members searcher',
+    image: 'Company',
+    url: 'https://github.com/rojasAndresTapia/Lemoncode-Master-module-4.1-React-lab',
+    category: 'github',
+  },
+  {
     name: 'Booking price calculator',
     image: 'Booking',
     url: 'https://github.com/rojasAndresTapia/Lemoncode-module-four-Booking',

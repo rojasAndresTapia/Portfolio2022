@@ -55,8 +55,9 @@ export const getNameStyles = (): SerializedStyles =>
   css({
     marginBottom: '5vh',
     marginTop: '5vh',
-    fontWeight: 700,
-    fontSize: '1.2rem',
+    fontFamily: 'Montserrat, sans-serif',
+    fontWeight: 500,
+    fontSize: '1.1rem',
   });
 
 export const getButtonStyles = (): SerializedStyles =>

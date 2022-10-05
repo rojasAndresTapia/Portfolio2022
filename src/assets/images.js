@@ -33,6 +33,7 @@ import Calculator from './calculator.png';
 import Money from './money.png';
 import Breaking from './breaking-bad.png'
 import Compra from './lista-compra.png'
+import Company from './company.png'
 
 const image = {
   Chilewines_cards: ChilewinesCards,
@@ -69,7 +70,8 @@ const image = {
   Calculator: Calculator,
   Money: Money,
   Breaking: Breaking,
-  Compra: Compra
+  Compra: Compra,
+  Company: Company
 };
 
 export default image;
