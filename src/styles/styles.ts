@@ -36,7 +36,7 @@ export const getMainStyles = (): SerializedStyles =>
     p: {
       fontSize: '1.1rem',
       color: '#45434C',
-      fontWeight: 500,
+      fontWeight: 400,
       letterSpacing: '2px',
       marginBottom: 0,
       lineHeight: '1.7em',
