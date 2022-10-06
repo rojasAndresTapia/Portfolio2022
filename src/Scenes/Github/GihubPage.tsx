@@ -26,9 +26,9 @@ export const GithubPage: React.FC = () => {
       </header>
       <main css={getMainStyles}>
         <p>
-          Below is the button that will direct you to my Github account, where I
-          am gradually uploading exercises, as well as small projects that I am
-          creating. Also below you will find some of my projects.
+          Here are some of my projects in Github, you can go to the code by
+          clicking on any of them. Also you can click the button below to go to
+          my Github profile.
         </p>
       </main>
       <div css={getButtonStyles}>
