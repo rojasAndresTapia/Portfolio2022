@@ -186,6 +186,12 @@ export const works = [
     category: 'github',
   },
   {
+    name: 'Private sections website',
+    image: 'Private',
+    url: 'https://github.com/rojasAndresTapia/Lemoncode-Master-module-4.1-Angular-lab',
+    category: 'github',
+  },
+  {
     name: 'Message Encryptor',
     image: 'Enigma',
     url: 'https://github.com/rojasAndresTapia/Lemoncode-module-6.2-enigma',
@@ -209,5 +215,6 @@ export const works = [
     url: 'https://github.com/rojasAndresTapia/Lemoncode-module-6.1-cart',
     category: 'github',
   }
+ 
 
 ];

@@ -31,9 +31,10 @@ import Portfolio from './Portfolio.png';
 import Enigma from './enigma.png';
 import Calculator from './calculator.png';
 import Money from './money.png';
-import Breaking from './breaking-bad.png'
-import Compra from './lista-compra.png'
-import Company from './company.png'
+import Breaking from './breaking-bad.png';
+import Compra from './lista-compra.png';
+import Company from './company.png';
+import Private from './private-pages.png';
 
 const image = {
   Chilewines_cards: ChilewinesCards,
@@ -71,7 +72,8 @@ const image = {
   Money: Money,
   Breaking: Breaking,
   Compra: Compra,
-  Company: Company
+  Company: Company,
+  Private: Private,
 };
 
 export default image;
